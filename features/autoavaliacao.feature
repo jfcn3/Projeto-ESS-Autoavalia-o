@@ -19,12 +19,17 @@ Scenario: Submissao de autoavaliacao fora do prazo
     Then o sistema impede o envio informando prazo expirado
     Then o sistema sugere contato com a coordenacao
 
-  Scenario: Submissao de autoavaliacao com anexo comprobatório
+Scenario: Submissao de autoavaliacao com anexo comprobatório
     Given que o aluno esta autenticado no sistema
     When ele anexa o comprovante de atividades
     Then o sistema valida o arquivo anexado
 
-  Scenario: Visualizacao de historico de autoavaliacoes anteriores
+Scenario: Visualizacao de historico de autoavaliacoes anteriores
     Given que o aluno esta autenticado no sistema
     When ele acessa a aba de historico
     Then o sistema lista todas as autoavaliacoes passadas
+
+Scenario: Visualizacao de historico de autoavaliacoes anteriores
+    Given que o aluno esta autenticado no sistema
+    When ele acessa a aba de historico
+    Then o sistema lista todas as autoavaliacoes passadas com notas e feedbacks detalhados
