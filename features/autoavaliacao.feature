@@ -17,3 +17,8 @@ Scenario: Submissao de autoavaliacao fora do prazo
     Given que o aluno esta autenticado no sistema
     When ele tenta enviar a autoavaliacao apos a data limite
     Then o sistema impede o envio informando prazo expirado
+
+Scenario: Submissao de autoavaliacao com anexo comprobatório
+    Given que o aluno esta autenticado no sistema
+    When ele anexa o comprovante de atividades
+    Then o sistema valida o arquivo anexado
