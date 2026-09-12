@@ -17,3 +17,4 @@ Scenario: Submissao de autoavaliacao fora do prazo
     Given que o aluno esta autenticado no sistema
     When ele tenta enviar a autoavaliacao apos a data limite
     Then o sistema impede o envio informando prazo expirado
+    Then o sistema sugere contato com a coordenacao
