@@ -22,3 +22,8 @@ Scenario: Submissao de autoavaliacao com anexo comprobatório
     Given que o aluno esta autenticado no sistema
     When ele anexa o comprovante de atividades
     Then o sistema valida o arquivo anexado
+
+Scenario: Visualizacao de historico de autoavaliacoes anteriores
+    Given que o aluno esta autenticado no sistema
+    When ele acessa a aba de historico
+    Then o sistema lista todas as autoavaliacoes passadas
