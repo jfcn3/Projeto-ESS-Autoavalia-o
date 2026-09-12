@@ -12,3 +12,8 @@ Scenario: Submissao sem preenchimento dos campos obrigatorios
     Given que o aluno esta autenticado no sistema
     When ele tenta submeter a autoavaliacao com campos em branco
     Then o sistema exibe uma mensagem de erro alertando os campos pendentes
+
+Scenario: Submissao de autoavaliacao fora do prazo
+    Given que o aluno esta autenticado no sistema
+    When ele tenta enviar a autoavaliacao apos a data limite
+    Then o sistema impede o envio informando prazo expirado
