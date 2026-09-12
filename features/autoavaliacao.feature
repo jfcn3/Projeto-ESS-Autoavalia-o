@@ -33,3 +33,7 @@ Scenario: Visualizacao de historico de autoavaliacoes anteriores
     Given que o aluno esta autenticado no sistema
     When ele acessa a aba de historico
     Then o sistema lista todas as autoavaliacoes passadas com notas e feedbacks detalhados
+
+Scenario: Rebase teste A
+    Given que o aluno esta autenticado
+    Then o sistema executa teste A
