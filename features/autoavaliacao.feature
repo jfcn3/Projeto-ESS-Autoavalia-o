@@ -37,3 +37,7 @@ Scenario: Visualizacao de historico de autoavaliacoes anteriores
 Scenario: Rebase teste A
     Given que o aluno esta autenticado
     Then o sistema executa teste A
+
+Scenario: Rebase teste B
+    Given que o aluno esta autenticado
+    Then o sistema executa teste B
