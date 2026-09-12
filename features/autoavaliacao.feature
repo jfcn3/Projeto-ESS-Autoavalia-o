@@ -41,3 +41,8 @@ Scenario: Rebase teste A
 Scenario: Rebase teste B
     Given que o aluno esta autenticado
     Then o sistema executa teste B
+
+Scenario: Exportacao de relatorio de autoavaliacao
+    Given que o aluno esta autenticado no sistema
+    When ele solicita a exportacao do relatorio
+    Then o sistema gera o arquivo em formato PDF
